@@ -73,7 +73,7 @@ export const upsertVector = async (req: Request, isInternal: boolean = false) =>
                 if (fileInputFieldFromExt !== 'txtFile') {
                     fileInputField = fileInputFieldFromExt
                 } else if (fileInputFieldFromMimeType !== 'txtFile') {
-                    fileInputField = fileInputFieldFromExt
+                    fileInputField = fileInputFieldFromMimeType
                 }
 
                 if (overrideConfig[fileInputField]) {

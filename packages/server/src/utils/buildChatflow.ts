@@ -178,7 +178,7 @@ export const utilBuildChatflow = async (req: Request, isInternal: boolean = fals
                 if (fileInputFieldFromExt !== 'txtFile') {
                     fileInputField = fileInputFieldFromExt
                 } else if (fileInputFieldFromMimeType !== 'txtFile') {
-                    fileInputField = fileInputFieldFromExt
+                    fileInputField = fileInputFieldFromMimeType
                 }
 
                 if (overrideConfig[fileInputField]) {
